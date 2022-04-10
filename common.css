@@ -1,0 +1,386 @@
+@charset "UTF-8";
+body{
+    position: relative;
+    z-index: 10;
+    font-size: 16px;
+    width: 100%;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+}
+.global-navi_pc{
+    position: fixed;
+    z-index: 3000;
+    background: #fff;
+    width: 100%;
+}
+
+.header_wrap{
+    margin: 0 auto;
+    padding: 10px 0;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    width: 940px;
+    justify-content: space-between;
+}
+
+.global-navi_sp{
+    display: none;
+}
+
+.nav-content{
+    display: none;
+}
+
+.content{
+    padding-top: 70px;
+    width: 100%;
+    z-index: 100;
+    position: relative;
+}
+
+.top_backgroound{
+    position: absolute;
+    height: 3090px;
+    width: 100%;
+    background-image: url(img/background.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    z-index: 0;
+    top: 0;
+}
+
+.article_contents_item_title{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+
+h1{
+    cursor:pointer
+}
+
+h2{
+    font-size: 16px;
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+.header_wrap ul{
+    display: flex;
+}
+
+.header_wrap li a{
+    margin-right: 34px;
+    font-size: 15px;
+    color: #f74490;
+    height: 48px;
+    line-height: 48px;
+    cursor:pointer;
+    text-decoration: none;
+    letter-spacing: 3px;
+}
+
+.header_wrap li:last-child{
+    margin-right:0;
+}
+
+.topcontent-wrap{
+    margin: 0 auto;
+}
+
+.topcontent{
+    margin: 0 auto;
+    width: 900px;
+    justify-content: space-between;
+}
+
+.topcontent_contents{
+    font-size: 36px;
+    color: #f74490;
+    font-weight: bold;
+    text-align: center;
+}
+
+.top_banner_wrap{
+    width: 100%;
+}
+
+.top_banner{
+    margin-bottom: 20px;
+}
+
+.top_banner img{
+    width: 100%;
+}
+
+.left_nav_wrap{
+    position: absolute;
+    left: 0;
+}
+
+.left_nav_01{
+    position: fixed;
+    z-index: 10000;
+    top: 33%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.left_nav_01 li{
+    color: #f74490;
+    line-height: 20px;
+    padding: 21px;
+    border: 1px solid #f74490;
+    text-align: center;
+    border-bottom: none;
+    font-size: 13px;
+    letter-spacing: 4px;
+}
+
+.left_nav_01 li:last-child{
+    border-bottom: 1px solid #f74490;
+}
+
+.left_nav_01 .left_nav_item{
+    text-decoration: none;
+    color: #f74490;
+}
+
+.left_nav{
+    position: fixed;
+    z-index: 1000;
+    top: 62%;
+    left: 15px;
+    transform: translateY(-50%);
+}
+
+.left_nav li{
+    width: 150px;
+}
+
+.left_nav li:nth-child(2){
+    position: relative;
+    top: -20px;
+}
+
+.left_nav li:nth-child(3){
+    position: relative;
+    top: -40px;
+}
+
+.left_nav li:nth-child(4){
+    position: relative;
+    top: -60px;
+}
+
+.left_nav li:nth-child(5){
+    position: relative;
+    top: -80px;
+}
+
+.left_nav li img{
+   width: 100%;
+}
+
+.topcontent_contents h2{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.left_nav_item:nth-child(4){
+    font-size: 16px;
+    padding: 41px 10px;
+}
+
+.left_nav_item:nth-child(5){
+    font-size: 16px;
+    padding: 41px 10px;
+}
+
+.topcontents_nav{
+    top: -40px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.topcontents_nav_item{
+    position: relative;
+    width: 250px;
+}
+
+.topcontents_nav_item:nth-child(2){
+    position: absolute;
+    width: 250px;
+    right: 438px;
+    top: 44px;
+}
+
+.topcontents_nav_item:nth-child(3){
+    left: 106px;
+    width: 250px;
+}
+
+.topcontents_nav_item:nth-child(4){
+    top: 34px;
+    width: 250px;
+}
+
+.topcontents_nav_item img{
+    width: 100%;
+}
+
+.topcontent_contents{
+    font-size: 36px;
+    color: #f74490;
+    font-weight: bold;
+    text-align: center;
+}
+
+.topmain_wrap{
+    width: 100%;
+}
+
+.topbord_common{
+    background: #ffffffa3;
+    border: 5px solid #f84390;
+    border-radius: 20px;
+    padding: 102px 70px 50px;
+    margin: 0 auto 40px;
+}
+
+.topbord_diet{
+    position: relative;
+}
+
+.topbord_diet:before{
+    content: url(img/clip.png);
+    display: inline-block;
+    height: 5px;
+    top: -17px;
+    right: 277px;
+    position: absolute;
+}
+
+.next-page_button{
+    color: #fff;
+    text-decoration: none;
+}
+
+.next-page_button p{
+    background: #f74490;
+    width: 520px;
+    height: 63px;
+    font-size: 25px;
+    line-height: 61px;
+    border-radius: 30px;
+    margin: 0px auto 40px;
+}
+
+.topbord_common h3{
+    margin-bottom: 10px;
+    letter-spacing: 4px;
+}
+
+.topbord_common h3 span{
+    font-size: 23px;
+}
+
+.topbord_tiktok{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.topbord_tiktok_item{
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 100;
+    width: 346px;
+}
+
+blockquote.mycite{
+    width: 346px;
+    height: 571px;
+    position: relative;
+    z-index: 2;
+}
+
+._embed_video_video_wrapper{
+    border-radius: 8px;
+}
+
+.jsx-2261688415{
+    padding-top: 63.778%;
+}
+
+blockquote{
+    border-left:none;
+}
+
+.jsx-2261688415{
+    padding-top: 107.778%;
+}
+
+.single-item img{
+    margin: 0 auto;
+}
+
+.new_photo01{
+    background-image: url(img/article/view_01/view_01_kv.jpg);
+}
+
+.new_photo02{
+    background-image: url(img/article/view_02/view_02_kv.jpg);
+    background-position: center left;
+}
+
+.new_photo03{
+    background-image: url(img/article/view_03/view_03_kv.png);
+    background-position: center;
+}
+
+.new_photo04{
+    background-image: url(img/article/view_04/view_04_kv.jpg);
+}
+
+.new_photo05{
+    background-image: url(img/article/view_05/view_05_kv.jpg);
+    background-position: center;
+}
+
+.new_photo06{
+    background-image: url(img/article/view_06/view_06_kv.jpg);
+}
+
+.new_photo07{
+    background-image: url(img/article/view_07/view_07_kv.jpg);
+}
+
+.new_photo08{
+    background-image: url(img/article/view_08/view_08_kv.jpg);
+}
+
+
+.bunner_sp{
+    display: none;
+}
+
+
+
+
+    /* 追従フッターSP */
+    .follow_footer_sp{
+        display: none;
+    }
+    /* 追従フッターSP */
+
+
+    .close_popup-inner{
+        display: none;
+    }
+
+    .close_black-background{
+        display: none;
+    }

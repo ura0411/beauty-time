@@ -1,0 +1,567 @@
+@media screen and (max-width:700px) {
+
+    body{
+        background-image: url(img/background_sp.png);
+        background-size: cover;
+        background-position-y: 100px;
+    }
+
+    .global-navi_pc{
+        display: none;
+    }
+
+    .global-navi_sp{
+        position: fixed;
+        z-index: 100000;
+        display: block;
+        width: 100%;
+        background: #fff;
+    }
+
+    .header_wrap_sp{
+        display: flex;
+        justify-content: space-between;
+    }
+
+     /* ハンバーガーメニュー */
+
+     header{
+        padding: 10px 15px;
+    }
+    
+    .header-logo{
+        position: relative;
+        top: 0;
+        left: 0;
+        height: 100%;
+    }
+
+    .header-logo h1{
+        height: 35px;
+    }
+
+    .header-logo h1 img{
+        height: 100%;
+    }
+
+      /* ------------------------------
+    バーガー中身
+    ---------------------------------*/
+    .header-nav{
+        list-style: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 44vw;
+        height: 100vh;
+        background-color: rgb(255 86 164 / 75%);
+        z-index: 20000;
+        text-align: center;
+        padding: 120px 0 0;
+        color: #fff;
+        /*　透明にして表示を消しています　 */
+        opacity: 0;
+        /*　X（右）方向に100％ずらして画面外に移動させています。　*/
+        transform: translateX(100%);
+        /* 　スライドで出てくる秒数と表示される秒数を指定　*/
+        transition: transform .3s, opacity .3s;
+        }
+
+        .nav-item{
+        margin-bottom: 30px;
+        }
+
+        .nav-item:first-of-type{
+        margin-bottom: 40px;
+        }
+
+        .nav-item:last-of-type{
+        margin-bottom: 0;
+        }
+
+        .header-nav a{
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
+        letter-spacing: 5px;
+        }
+
+        /* ------------------------------
+        BURGER
+        ---------------------------------*/
+        .menu-btn{
+            top: 8px;
+            position: relative;
+            z-index: 20000;
+        }
+    
+        /* 　ここでハンバーガーメニューの大きさや色を変更　*/
+        .bar{
+            display: block;
+            background-color: #f64490;
+            height: 2px;
+            border-radius: 1px;
+        }
+    
+        /*　topとbottomをY方向に移動させて3本の線に。秒数はバツから戻る時の秒数　 */
+        .bar-top{
+            transform: translateY(-4px);
+            transition: transform .3s;
+        }
+        .bar-bottom{
+            transform: translateY(4px);
+            transition: transform .3s;
+        }
+        .menu{
+            font-size: 10px;
+            text-transform: uppercase;
+            color: #f64692;
+            font-weight: bold;
+        }
+        /* ハンバーガーボタンを押した後のバツの記述
+        rotateで角度を決める事ができるので好きなバツを作れます */
+        .bar.cross.bar-top{
+            transform: translateY(2px)rotate(30deg);
+            transition: .3s;
+            background-color: #fff;
+        }
+        .bar.cross.bar-mid{
+            opacity: 0;
+            transition: opacity .3s;
+        }
+        .bar.cross.bar-bottom{
+            transform: translateY(-2px)rotate(-30deg);
+            transition: .5s;
+            background-color: #fff;
+        }
+
+        .menu_open{
+            color: #fff;
+        }
+
+        /* メニューが開いた時に画面をスクロールしないようにする記述。
+        jQueryと組み合わせます。 */
+        body.noscroll{
+        overflow: hidden;
+        }
+        /* 　開いた時にX(0)で元の位置へ。
+        openというクラスをjQueryでつけます。　*/
+        .header-nav.open{
+        transform: translateX(0);
+        opacity: 1;
+        transform: transform .3s, opacity .3s;
+        }
+    
+        /* 　薄暗い画面の記述　*/
+        .burger-musk{
+        display: none;
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+        }
+    
+        /* 　buttonのリセットです。これをしないとどうなるか以下で紹介しますね。　*/
+        #modal01{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        padding: 0;
+        appearance: none;
+        }
+
+
+
+  
+     /* ハンバーガーメニュー */
+
+     .content{
+        position: relative;
+        top: 60px;
+        padding: 0;
+     }
+
+
+     #wrapper{
+        height: 60px;
+        padding: 7px 10px;
+     }
+
+     #wrapper a h1{
+        width: 100px;
+     }
+
+     #wrapper img{
+        width: 100%;
+     }
+
+     .article_view_content{
+         width: 100%;
+     }
+
+     .article_contents_view{
+         width: 100%;
+     }
+
+     .article_contents{
+         display: block;
+     }
+
+     .article_contents_box_view:nth-child(1), .article_contents_box:nth-child(2){
+        width: 96%;
+        margin: 0 auto;
+     }
+
+     .article_contents_box:nth-child(2){
+         margin-top: 40px;
+     }
+
+     .view_top_photo{
+        height: 230px;
+     }
+
+     .article_contents_items_daily a{
+        box-shadow: 2px 2px 4px #c1c1c1;
+     }
+
+     .line_pink{
+        font-size: 15px;
+     }
+
+     .article_contents_box_view h5{
+         font-size: 16px;
+         border-left: none;
+         padding-left:0;
+     }
+
+     .article_contents_box_view h6{
+         font-size: 16px;
+     }
+
+     .line_pink:after {
+        display: none; 
+    }
+
+    .scroll_table {
+        max-width: 800px;
+        overflow-x: auto;
+    }
+
+    .view_contents{
+        padding: 13px 20px;
+        margin-bottom: 0;
+    }
+    
+    table {
+        white-space: nowrap;
+        margin: 10px 0;
+        width: 425px;
+    }
+    .table_side{
+        width: 100px;
+    }
+    
+    .scroll_table::-webkit-scrollbar {
+        height: 10px; /* スクロールバーの高さ */
+    }
+
+    .view_article-text{
+        font-size: 15px;
+        line-height: 27px;
+        padding-top:20px;
+    }
+
+    .color_blue,.color_read, .color_pink, .color_orange, .color_black, .color_blue_link{
+        font-size: 15px;
+    }
+
+    .article_contents_box_view h2{
+        font-size: 18px;
+    }
+
+    .article_contents_box_view h3{
+        font-size: 17px;
+        margin-top: 20px;
+        background: #fff8fc;
+        padding: 10px;
+    }
+
+    .article_contents_box_view h4{
+        font-size: 16px;
+        margin: 40px 0 0 0;
+        border-left: 10px #ffb8e0 solid;
+    }
+
+    h4 .color_orange{
+        font-size: 15px;
+    }
+
+    .section-wrapper {
+        padding: 100px 5% 50px;
+    }
+
+    .slider-item{
+        background-size: cover;
+    }
+
+    .header_wrap{
+        width: 100%;
+    }
+
+    .topcontent{
+        width: 100%;
+    }
+
+    .viue-right_bunner a{
+        width: 100%;
+    }
+    
+    .viue-right_bunner img{
+        width: 100%;
+    }
+
+    .left_nav_wrap{
+        display: none;
+    }
+
+    .topcontents_nav{
+        display: none;
+    }
+
+    .topcontent_contents h2 {
+        width: 100%;
+        height: 110px;
+    }
+
+    .topcontent_contents h2 img{
+        width: 320px;
+    }
+
+    .slider{
+        height: 230px;
+    }
+    
+    blockquote.mycite{
+        width: 100%;
+        height: 100%;
+        border-radius:12px;
+    }
+
+    .tiktok-embed{
+        width: 324px;
+    }
+
+    .topbord_tiktok{
+        display: block;
+    }
+
+   #modal01 {
+        width: 100%;
+        height: 100%;
+    }
+
+    #modal02 {
+        width: 100%;
+        height: 100%;
+    }
+
+    #modal03 {
+        width: 100%;
+        height: 100%;
+    }
+
+    .topbord_tiktok_item{
+        width: 100%;
+        height: 557px;
+    }
+
+    .topbord_diet:before{
+        display: none;
+    }
+
+    .topbord_common{
+        padding: 20px 10px;
+        width: calc(100% - 40px);
+        border: 3px solid #f84390;
+        margin: -17px auto 110px;
+        padding-top: 70px;
+    }
+
+    .topbord_common:first-child{
+        margin: -17px auto 50px;
+        padding-top: 70px;
+    }
+
+    .next-page_button p{
+        width: calc(100% - 20px);
+        font-size: 18px;
+    }
+
+    .topbord_common h3{
+        font-size: 21px;
+        line-height: 26px;
+    }
+
+    .topbord_common h3 span{
+        font-size: 16px;
+    }
+
+
+    ._embed_player_embed-profile.paused.jsx-1226050086{
+        display: none;
+    }
+
+    .slick-dots{
+        margin: -20px 0 0 0;
+    }
+
+    footer{
+        margin-top: 100px;
+    }
+
+    .container p{
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .button_common{
+        width: 100%;
+        font-size: 16px;
+        margin: 30px auto 10px;
+    }
+
+}
+
+@media screen and (max-width:400px) {
+    .topcontent_contents h2{
+        width: 100%;
+        height: 100px;
+    }
+}
+
+
+
+
+
+.header {
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+  }
+  
+  .header__inner {
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: inherit;
+    position: relative;
+  }
+  
+  
+  /* ヘッダーのロゴ部分 */
+  .header__title {
+    width: 80px;
+  }
+  
+  
+  @media screen and (min-width: 960px) {
+    .header__title {
+      width: 120px;
+    }
+  }
+  
+  .header__title img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* ヘッダーのナビ部分 */
+  
+  .header__nav {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+    background-color: #fff;
+    transition: ease .4s;
+  }
+  
+  
+  @media screen and (min-width: 960px) {
+    .header__nav {
+      position: static;
+      transform: initial;
+      background-color: inherit;
+      height: inherit;
+      display: flex;
+      justify-content: end;
+      width: 50%;
+    }
+  }
+  
+  
+  @media screen and (min-width: 960px) {
+    .nav__items {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      height: initial;
+      justify-content: space-between;
+    }
+  }
+  
+  .nav-items {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+  }
+  
+  
+  
+  @media screen and (min-width: 960px) {
+    .nav-items {
+      position: inherit;
+      top: 0;
+      left: 0;
+      transform: translate(0, 0);
+  
+    }
+  }
+  
+  /* ナビのリンク */
+  .nav-items__item a {
+    color: black;
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 24px;
+    color: black;
+  }
+  
+  .nav-items__item:last-child a {
+    margin-bottom: 0;
+  }
+  
+  @media screen and (min-width: 960px) {
+    .nav-items__item a {
+      margin-bottom: 0;
+    }
+  }
+  

@@ -1,0 +1,43 @@
+.slider-item01{
+    background: url(../../img/01_training.jpg);
+}
+
+.slider-item03{
+    background: url(../../img/02_training.jpg);
+}
+
+body{
+    background: url(../../img/det-trainning_background.png);
+}
+
+.topbord_diet:before{
+    content: url(../../img/diet-traiining_clip.png);
+    display: inline-block;
+    height: 5px;
+    top: -17px;
+    right: 277px;
+    position: absolute;
+}
+
+.topbord_common{
+    border: 5px solid #5f5f5f;
+}
+
+.topcontent_contents h2{
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width:700px) {
+    .slider-item01{
+        background: url(/img/kv_top-page_sp01.jpg);
+    }
+
+    .slider-item02{
+        background: url(/img/kv_top-page_sp01.jpg);
+    }
+
+    .slider-item03{
+        background: url(/img/kv_top-page_sp01.jpg);
+    }
+
+}

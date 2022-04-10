@@ -1,0 +1,427 @@
+a{
+    text-decoration: none;
+}
+
+#wrapper{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.article_view_content{
+    width: 1130px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.article_contents{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.article_contents_box:nth-child(1){
+    width: 730px;
+}
+
+.article_contents_box:nth-child(2){
+    width: 300px;
+}
+
+.article_contents_item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.article_contents_items_new{
+    width: 230px;
+    margin-bottom: 20px;
+    border: 0.5px solid #ebebeb;
+    cursor: pointer;
+    cursor: hand;
+}
+
+.new_photo{
+    padding: 0;
+    width: 100%;
+    height: 230px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.new_title{
+    color: #222222;
+    line-height: 21px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    padding: 10px 14px;
+    font-size: 12px;
+    text-align: left;
+    background: #fff;
+}
+
+.article_contents_items_daily a{
+    text-decoration: none;
+    display: flex;
+    margin-bottom: 10px;
+    border: 0.5px solid #ebebeb;
+}
+
+.daily_photo{
+    padding: 0;
+    width: 140px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+}
+
+.daily_title{
+    font-size: 12px;
+    width: 290px;
+    letter-spacing: 1px;
+    line-height: 18px;
+    background: #fff;
+    text-align: left;
+    padding: 20px;
+}
+
+.article_backgroound{
+    position: absolute;
+    height: 1502px;
+    width: 100%;
+    background-image: url(../../img/article_background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+    top: 0;
+}
+
+.article_contents_view{
+    width: 1140px;
+    position: relative;
+}
+
+.article_contents_box_daily{
+    /* position: fixed; */
+    top: 0px;
+    right: 0px;
+    z-index: 2000;
+    background: #fff;
+    padding: 0;
+    color: #3c3c3c;
+    padding: 0;
+    color: #3c3c3c;
+}
+
+.article_contents_box_view:nth-child(1){
+    width: 800px;
+}
+
+.view_top_photo01{
+    background-image: url(../../img/article/view_01/view_01_kv.jpg);
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+.view_top_photo02{
+    background-image: url(../../img/article/view_02/view_02_kv.jpg);
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+.view_top_photo03{
+    background-image: url(../../img/article/view_03/view_03_kv.png);
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+    background-position: center;
+}
+
+.table-of-contents{
+    text-align: left;
+    padding: 0;
+    font-weight: bold;
+    color: #060606;
+    font-size: 15px;
+}
+
+.article_contents_box_view h2{
+    font-size: 28px;
+    text-align: left;
+    padding: 0;
+}
+
+.view_contents{
+    margin-top: 20px;
+    background: #fff5f6;
+    border: 1px solid #eee;
+    padding: 20px 40px;
+    margin-bottom: 40px;
+}
+
+.view_contents li{
+    font-size: 15px;
+    line-height: 32px;
+}
+
+.article_contents_box_view h3{
+    font-size:24px;
+    letter-spacing: 2px;
+    border-left: 4px solid #f74490;
+    padding-left: 8px;
+}
+
+.article_contents_box_view h4{
+    border-left: 23px #ffb8e0 solid;
+    margin: 50px 0 0 0;
+    font-size: 20px;
+    padding-left: 8px;
+    letter-spacing: 3px;
+}
+
+.article_contents_box_view h5{
+    margin: 40px 0 0 0;
+    font-size: 17px;
+    border-left: 2px solid #f84390;
+    padding-left: 10px;
+    color: rgb(23, 23, 23);
+    font-weight: bold;
+}
+
+.article_contents_box_view h6{
+    margin: 0;
+    font-size: 17px;
+    border-left: 2px solid #000000;
+    padding-left: 10px;
+    color: rgb(23, 23, 23);
+    font-weight: bold;
+}
+
+table {
+    border-collapse: collapse;
+    width: 620px;
+    font-size: 13px;
+    text-align: left;
+    margin-top: 10px;
+}
+
+
+table th, table td {
+    border: solid 1px rgb(200 200 200);
+}
+
+.view_article-text{
+    font-size:16px;
+    text-align: left;
+    line-height: 33px;
+    padding-top: 20px;
+}
+
+.view_article-text-annotation{
+    padding: 5px 0;
+    font-size:11px;
+    color: #747474;
+    text-align: left;
+}
+
+.view_img{
+    padding: 0;
+    width: 80%;
+}
+
+.view_img img{
+    width: 100%;
+}
+
+
+footer{
+    z-index: 100;
+    position: relative;
+}
+
+.table_heading, .table_heading_side, .table_side, .table_inside{
+    padding: 10px;
+    text-align: center;
+}
+
+.table_side{
+    width: 140px;
+}
+
+.table_heading{
+    background: #696969;
+    color: #fff;
+}
+
+.table_heading_side{
+    background: #222222;
+    color: #fff;
+}
+
+.button_common{
+    background: #f84390;
+    color: #fff;
+    text-decoration: none;
+    margin: 30px auto;
+    display: block;
+    width: 490px;
+    text-align: center;
+    padding: 12px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.view_name_link{
+    width: 100%;
+}
+
+.view_name{
+    width: 60%;
+    display: block;
+    margin: 20px auto 0;
+
+}
+/* span などで囲って装飾をつけよう */
+
+.color_black{
+    color: #1b1b1b;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.color_read{
+    color: #ff5e76;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.color_orange{
+    color: #ff8d0c;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.color_blue{
+    color: #5e6cff;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.color_blue_link{
+    color: #27a7f6;
+    font-weight: bold;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.color_pink{
+    color: #f84390;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.line_pink{
+    position: relative;
+    font-weight: bold;
+    width: 100%;
+    color: #f84390;
+    letter-spacing: 2px;
+    font-size: 16px;
+}
+
+.line_pink:after {
+    position: absolute;
+    content: " ";
+    display: block;
+    border-bottom: solid 3px #ffff5d;
+    width: 100%;
+    top: 19px;
+    left: 0;
+}
+
+h4 .color_orange{
+    font-size: 20px;
+}
+
+.background_pink{
+    margin-top: 20px;
+    background: #fff5f6;
+    padding: 20px 40px;
+    margin-bottom: 20px;
+}
+
+.background_blue{
+    margin-top: 20px;
+    background: #c7c5ff;
+    padding: 20px 40px;
+    margin-bottom: 20px;
+}
+
+.background_line{
+    margin-top: 20px;
+    border: 1px solid rgb(78, 78, 78);
+    padding: 20px 40px;
+    margin-bottom: 20px;
+}
+
+/* span などで囲って装飾をつけよう */
+
+
+
+
+/*クリックで表示非表示のタブ 02記事で使用*/
+
+.hidden_box {
+    padding: 0;
+}
+
+/*ボタン装飾*/
+.hidden_box label {
+    padding: 15px;
+    font-weight: bold;
+    cursor :pointer;
+    display: block;
+    text-align: center;
+    background: #ff71af;
+    color: #fff;
+    border: 0;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*ボタンホバー時*/
+.hidden_box label:hover {
+    background: #ff71af;
+}
+
+/*チェックは見えなくする*/
+.hidden_box input {
+    display: none;
+}
+
+/*中身を非表示にしておく*/
+.hidden_box .hidden_show {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.8s;
+}
+
+/*クリックで中身表示*/
+.hidden_box input:checked ~ .hidden_show {
+    padding: 10px 0;
+    height: auto;
+    opacity: 1;
+}
+/*クリックで表示非表示のタブ*/
